@@ -17,9 +17,18 @@ const movieListReducer = (state = initialState, action) => {
             } else {
                 movieList = { list: [ action.payload ] }
             }
-
             localStorage.setItem('movieList', JSON.stringify(movieList));
+            return movieList;
 
+        case 'REMOVE_MOVIE_FROM_LIST': {
+            let movieList = localStorage.getItem('movieList');
+                movieList = JSON.parse(movieList);
+                const updatedList = movieList.list.filter((movieFromList)) => movieFromList.imbdID !== action.payload.imdbID) if (updatedList = updatedList) {
+                    movie.list = updatedList;
+                    localStorage.setItem ('movieList', JSON.stringify(movieList));                   
+                } else {
+                    localStorage.removeItem('movieList');
+                }
             return movieList;
         }
         default:
