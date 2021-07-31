@@ -16,6 +16,7 @@ let App = ({ movieList, getMovieList  }) => {
           <div key={movie.imdbID}>
             <img src={movie.Poster} alt={`${movie.Title} poster`} />
             <h3>{ movie.Title }</h3>
+            <button onClick={() => console.log(movie)}>Remove From List</button>
           </div>
         ))
       }
