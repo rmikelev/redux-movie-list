@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <RBNavbar bg="light"  expand="sm">
             <Container>
-                <RBNavbar.Brand href="/">
+                <RBNavbar.Brand href="/redux-movie-list">
               <img
                 src="/redux-movie-list/logo192.png"
                 width="30"
@@ -21,8 +21,8 @@ const Navbar = () => {
                 <RBNavbar.Toggle /> 
                     <RBNavbar.Collapse> 
                         <Nav>
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/movie-list">Movie</Nav.Link>  
+                            <Nav.Link href="/redux-movie-list">Home</Nav.Link>
+                            <Nav.Link href="/redux-movie-list/movie-list">Movie</Nav.Link>  
                         </Nav> 
                     </RBNavbar.Collapse>
             </Container>

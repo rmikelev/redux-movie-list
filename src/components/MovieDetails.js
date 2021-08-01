@@ -21,22 +21,22 @@ const MovieDetails = ({ imdbID }) => {
           src={movie.Poster !== 'N/A' ? movie.Poster : '/redux-movie-list/images/popcornPoster.jpg'}
           alt={`${movie.Title} poster`}
         />
-        {(movie.Poster === 'N/A') ? <span className="text-secondary">No poster avaialble</span> : null }
+        {(movie.Poster === 'N/A') ? <span className="text-secondary">No poster available</span> : null }
       </div>
       <div className="col-md-6">
-        { movie.imdbRating !== 'N/A' && <strong className="float-end text-primary h4">{movie.imdbRating}</strong> }
-        <h4><strong>{movie.Title}</strong></h4>
-        { movie.Rated !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Rated}</span> }
-        { movie.Runtime !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Runtime}</span> }
-        { movie.Genre !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Genre}</span> }
-        { movie.Plot !== 'N/A' && 
-          <p><strong>Plot</strong><br/>
-          {movie.Plot}</p>
-        }
-        { movie.Actors !== 'N/A' && 
-          <p><strong>Actors</strong><br/>
-          {movie.Actors}</p>
-        }
+            { movie.imdbRating !== 'N/A' && <strong className="float-end text-primary h4">{movie.imdbRating}</strong> }
+            <h4><strong>{movie.Title}</strong></h4>
+            { movie.Rated !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Rated}</span> }
+            { movie.Runtime !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Runtime}</span> }
+            { movie.Genre !== 'N/A' && <span className="badge bg-secondary m-1">{movie.Genre}</span> }
+            { movie.Plot !== 'N/A' && 
+            <p><strong>Plot</strong><br/>
+            {movie.Plot}</p>
+            }
+            { movie.Actors !== 'N/A' && 
+            <p><strong>Actors</strong><br/>
+            {movie.Actors}</p>
+            }
       </div>
     </div>
   ) : (<h2>Loading...</h2>);
