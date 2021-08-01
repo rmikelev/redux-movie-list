@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
-
 import { getMovieList, removeMovieFromList } from './redux/actions/movieList actions';
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card';
@@ -44,4 +43,5 @@ App = connect(
   mapStateToProps,
   { getMovieList, removeMovieFromList }
 )(App)
+
 

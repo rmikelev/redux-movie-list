@@ -25,7 +25,7 @@ let MovieSearch = ({ addMovieToList }) => {
         addMovieToList(result);
     }
 
-    return (s
+    return (
         <Container>
             <SearchBar onSearch={onSearch}/>
             <Row>
