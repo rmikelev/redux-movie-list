@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button;'
+import Button from 'react-bootstrap/Button';
 
 let MovieSearch = ({ addMovieToList }) => {
     const movieApiService = new MovieApiService();
