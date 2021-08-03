@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 
 const Navbar = () => {
     return (
-        <RBNavbar bg="light"  expand="sm">
+        <RBNavbar bg="Secondary"  expand="sm">
             <Container>
                 <RBNavbar.Brand href="/redux-movie-list">
               <img

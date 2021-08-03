@@ -12,11 +12,13 @@ import Col from 'react-bootstrap/Col';
 
 let App = ({ movieList, getMovieList, removeMovieFromList }) => {
   useEffect(() => {
+    console.log(movieList)
     getMovieList();
   }, [getMovieList])
 
   return (
     <Container>
+      {console.log({ movieList, getMovieList, removeMovieFromList  })}
       <h1>My Movie List</h1>
       <Row>
         {
@@ -48,3 +50,4 @@ App = connect(
 
 
 export default App;
+

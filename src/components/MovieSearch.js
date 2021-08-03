@@ -11,7 +11,6 @@ import Button from 'react-bootstrap/Button';
 
 let MovieSearch = ({ addMovieToList }) => {
     const movieApiService = new MovieApiService();
-
     const [searchResults, setSearchResults] = useState(); 
     const onSearch = async (title) => {
         const results = await movieApiService.getMoviesByTitle(title);
@@ -40,8 +39,6 @@ let MovieSearch = ({ addMovieToList }) => {
                         <Button variant="primary"onClick={() => addToMovieList(movie.imdbID)}>Add To List</Button>
                         </Card.Body>                        
                         </Card>
-                        
-
                     </Col>
                 ))
             }

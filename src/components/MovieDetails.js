@@ -14,15 +14,15 @@ const MovieDetails = ({ imdbID }) => {
   },[imdbID]);
 
   return movie ? (
-    <div className="row">
-      <div className="col-md-6 text-center">
-        <img
-          variant="top"
-          src={movie.Poster !== 'N/A' ? movie.Poster : '/redux-movie-list/images/popcornPoster.jpg'}
-          alt={`${movie.Title} poster`}
-        />
-        {(movie.Poster === 'N/A') ? <span className="text-secondary">No poster available</span> : null }
-      </div>
+        <div className="row">
+        <div className="col-md-6 text-center">
+            <img
+            variant="top"
+            src={movie.Poster !== 'N/A' ? movie.Poster : '/redux-movie-list/images/popcornPoster.jpg'}
+            alt={`${movie.Title} poster`}
+            />
+            {(movie.Poster === 'N/A') ? <span className="text-secondary">No poster available</span> : null }
+        </div>
       <div className="col-md-6">
             { movie.imdbRating !== 'N/A' && <strong className="float-end text-primary h4">{movie.imdbRating}</strong> }
             <h4><strong>{movie.Title}</strong></h4>
