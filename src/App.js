@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row  from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Styled from 'styled-components';
 
 
 
@@ -17,9 +18,9 @@ let App = ({ movieList, getMovieList, removeMovieFromList }) => {
   }, [getMovieList])
 
   return (
-    <Container>
+    <Container className="bg-light">
       {console.log({ movieList, getMovieList, removeMovieFromList  })}
-      <h1>My Movie List</h1>
+      <h1 className="bg-warning">My Movie List</h1>
       <Row>
         {
           movieList && movieList.list && movieList.list.map((movie) => (
